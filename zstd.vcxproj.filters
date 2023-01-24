@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Assembler Files">
+      <UniqueIdentifier>{c6fc5d5c-8a8b-4552-ac6d-9689b8afa14c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assembler Files\x86">
+      <UniqueIdentifier>{0cc2a38a-b7aa-4e31-bf18-d15124707603}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assembler Files\x64">
+      <UniqueIdentifier>{2699fb70-125a-4c7a-ad4d-002b4b04b764}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common">
+      <UniqueIdentifier>{209ca3dd-905c-49d4-a765-86e9a703b00c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\compress">
+      <UniqueIdentifier>{4558886c-fe71-4910-a9ad-de4913168e45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\decompress">
+      <UniqueIdentifier>{0a8b092c-20b8-4629-84a6-b88dedea52ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\dictBuilder">
+      <UniqueIdentifier>{470078e4-030b-486c-b749-01493144e006}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="crc32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="deflate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gzguts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inffast.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inffixed.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inflate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inftrees.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="trees.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="contrib\masmx86\inffas32.asm">
+      <Filter>Assembler Files\x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="contrib\masmx86\match686.asm">
+      <Filter>Assembler Files\x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="contrib\masmx64\gvmat64.asm">
+      <Filter>Assembler Files\x64</Filter>
+    </CustomBuild>
+    <CustomBuild Include="contrib\masmx64\inffasx64.asm">
+      <Filter>Assembler Files\x64</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="common\debug.c">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\entropy_common.c">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\error_private.c">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\fse_decompress.c">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\pool.c">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\threading.c">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\xxhash.c">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\zstd_common.c">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="compress\fse_compress.c">
+      <Filter>Source Files\compress</Filter>
+    </ClCompile>
+    <ClCompile Include="compress\hist.c">
+      <Filter>Source Files\compress</Filter>
+    </ClCompile>
+    <ClCompile Include="compress\huf_compress.c">
+      <Filter>Source Files\compress</Filter>
+    </ClCompile>
+    <ClCompile Include="compress\zstd_compress.c">
+      <Filter>Source Files\compress</Filter>
+    </ClCompile>
+    <ClCompile Include="compress\zstd_compress_literals.c">
+      <Filter>Source Files\compress</Filter>
+    </ClCompile>
+    <ClCompile Include="compress\zstd_compress_sequences.c">
+      <Filter>Source Files\compress</Filter>
+    </ClCompile>
+    <ClCompile Include="compress\zstd_compress_superblock.c">
+      <Filter>Source Files\compress</Filter>
+    </ClCompile>
+    <ClCompile Include="compress\zstd_double_fast.c">
+      <Filter>Source Files\compress</Filter>
+    </ClCompile>
+    <ClCompile Include="compress\zstd_fast.c">
+      <Filter>Source Files\compress</Filter>
+    </ClCompile>
+    <ClCompile Include="compress\zstd_lazy.c">
+      <Filter>Source Files\compress</Filter>
+    </ClCompile>
+    <ClCompile Include="compress\zstd_ldm.c">
+      <Filter>Source Files\compress</Filter>
+    </ClCompile>
+    <ClCompile Include="compress\zstd_opt.c">
+      <Filter>Source Files\compress</Filter>
+    </ClCompile>
+    <ClCompile Include="compress\zstdmt_compress.c">
+      <Filter>Source Files\compress</Filter>
+    </ClCompile>
+    <ClCompile Include="decompress\huf_decompress.c">
+      <Filter>Source Files\decompress</Filter>
+    </ClCompile>
+    <ClCompile Include="decompress\zstd_ddict.c">
+      <Filter>Source Files\decompress</Filter>
+    </ClCompile>
+    <ClCompile Include="decompress\zstd_decompress.c">
+      <Filter>Source Files\decompress</Filter>
+    </ClCompile>
+    <ClCompile Include="decompress\zstd_decompress_block.c">
+      <Filter>Source Files\decompress</Filter>
+    </ClCompile>
+    <ClCompile Include="dictBuilder\cover.c">
+      <Filter>Source Files\dictBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="dictBuilder\divsufsort.c">
+      <Filter>Source Files\dictBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="dictBuilder\fastcover.c">
+      <Filter>Source Files\dictBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="dictBuilder\zdict.c">
+      <Filter>Source Files\dictBuilder</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="zstd.def">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
